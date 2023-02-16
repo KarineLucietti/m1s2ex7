@@ -1,12 +1,10 @@
-console.log('Panificadora Pão de Ontem - Tabela de Preços')
+const breadPrice = parseFloat(prompt("Qual é o preço do pão:"));
+console.log("Preço do pão: R$ " + breadPrice);
+console.log("Panificadora Pão de Ontem - Tabela de preços");
 
+for (i = 1; i <= 50; i++) {
+    result = breadPrice * i;
+    console.log(i + " - R$ " + result.toFixed(2));
 
-function calcula() {
-    const preco = document.getElementById("preco").value;
- 
-    for(i=1; i<=50; i++) {
-        console.log(i + ' - R$ '+ preco*i)
-    }
 }
-
 
